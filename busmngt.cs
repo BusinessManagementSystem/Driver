@@ -10,7 +10,7 @@ namespace busmngt
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the Small business management system..... ");
+            Console.WriteLine("Welcome to the Business management system project..... ");
             Console.ReadKey();
             Environment.Exit(0);
         }
