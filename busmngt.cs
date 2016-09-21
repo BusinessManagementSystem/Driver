@@ -10,18 +10,9 @@ namespace busmngt
     {
         static void Main(string[] args)
         {
-        try
-        {
-        IEmployee Natalee = new EmployeeA("Natalee" 30, Security Analyst);
-        Console.Writeline("Information is incorrect");
-        Console.ReadKey();
-        }
-        catch
-        {
-            Console.Writeline("Employee Input Incorrect")
+            Console.WriteLine("Welcome to the Small business management system..... ");
             Console.ReadKey();
             Environment.Exit(0);
-        }
         }
     }
 }
