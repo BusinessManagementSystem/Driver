@@ -28,12 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.DSS3 = new System.Windows.Forms.Button();
             this.DSS2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -42,12 +36,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.DSS1 = new System.Windows.Forms.Button();
-            this.Employee_Count_by_Age = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.HeadCount = new System.Windows.Forms.Label();
+            this.progressbar21 = new sprint_2_draft.Progressbar2();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Employee_Count_by_Age)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // DSS3
@@ -137,55 +129,36 @@
             this.DSS1.UseVisualStyleBackColor = true;
             this.DSS1.Click += new System.EventHandler(this.DSS1_Click);
             // 
-            // Employee_Count_by_Age
+            // HeadCount
             // 
-            chartArea1.Name = "Employee Count By Age";
-            this.Employee_Count_by_Age.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.Employee_Count_by_Age.Legends.Add(legend1);
-            this.Employee_Count_by_Age.Location = new System.Drawing.Point(293, 27);
-            this.Employee_Count_by_Age.Name = "Employee_Count_by_Age";
-            series1.ChartArea = "Employee Count By Age";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.MarkerColor = System.Drawing.Color.Yellow;
-            series1.Name = "Employee Count By Age";
-            series1.XValueMember = "firstname";
-            series1.YValueMembers = "Earningsalary";
-            series1.YValuesPerPoint = 3;
-            this.Employee_Count_by_Age.Series.Add(series1);
-            this.Employee_Count_by_Age.Size = new System.Drawing.Size(380, 269);
-            this.Employee_Count_by_Age.TabIndex = 16;
-            this.Employee_Count_by_Age.Text = "Employee Count by Age";
+            this.HeadCount.AutoSize = true;
+            this.HeadCount.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HeadCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.HeadCount.Location = new System.Drawing.Point(298, 195);
+            this.HeadCount.Name = "HeadCount";
+            this.HeadCount.Size = new System.Drawing.Size(300, 22);
+            this.HeadCount.TabIndex = 15;
+            this.HeadCount.Text = "Total Head count of Employees";
             // 
-            // chart1
+            // progressbar21
             // 
-            chartArea2.Name = "Employee Count By Age";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(691, 27);
-            this.chart1.Name = "chart1";
-            series2.ChartArea = "Employee Count By Age";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
-            series2.Legend = "Legend1";
-            series2.MarkerColor = System.Drawing.Color.Yellow;
-            series2.Name = "Employee Count By Age";
-            series2.XValueMember = "firstname";
-            series2.YValueMembers = "Earningsalary";
-            series2.YValuesPerPoint = 3;
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(378, 269);
-            this.chart1.TabIndex = 17;
-            this.chart1.Text = "Employee Count by Age";
+            this.progressbar21.BackColor = System.Drawing.SystemColors.Window;
+            this.progressbar21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.progressbar21.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.progressbar21.Location = new System.Drawing.Point(367, 67);
+            this.progressbar21.Name = "progressbar21";
+            this.progressbar21.Size = new System.Drawing.Size(151, 125);
+            this.progressbar21.TabIndex = 14;
+            this.progressbar21.Value = 9F;
+            this.progressbar21.Load += new System.EventHandler(this.progressbar21_Load);
             // 
             // Dashboard3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1081, 579);
-            this.Controls.Add(this.chart1);
-            this.Controls.Add(this.Employee_Count_by_Age);
+            this.Controls.Add(this.HeadCount);
+            this.Controls.Add(this.progressbar21);
             this.Controls.Add(this.panel1);
             this.Name = "Dashboard3";
             this.Text = "Dashboard3";
@@ -193,9 +166,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Employee_Count_by_Age)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -208,8 +180,8 @@
         private System.Windows.Forms.Button Previous_Screen;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart Employee_Count_by_Age;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Button DSS1;
+        private Progressbar2 progressbar21;
+        private System.Windows.Forms.Label HeadCount;
     }
 }
